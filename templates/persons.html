@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for person in persons %}
+    <ul>
+        <li>{{ person.name }} lives at {{ person.address }} is {{ person.age }} years old and has email {{person.email }}</li>
+    </ul>
+    {% endfor %}
+{% endblock content %}
+
